@@ -115,57 +115,57 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCRP-01 | — | Pending |
-| SCRP-02 | — | Pending |
-| SCRP-03 | — | Pending |
-| SCRP-04 | — | Pending |
-| SCRP-05 | — | Pending |
-| SCRP-06 | — | Pending |
-| GAZE-01 | — | Pending |
-| GAZE-02 | — | Pending |
-| GAZE-03 | — | Pending |
-| GAZE-04 | — | Pending |
-| GAZE-05 | — | Pending |
-| EXTR-01 | — | Pending |
-| EXTR-02 | — | Pending |
-| EXTR-03 | — | Pending |
-| EXTR-04 | — | Pending |
-| EXTR-05 | — | Pending |
-| EXTR-06 | — | Pending |
-| EXTR-07 | — | Pending |
-| LINK-01 | — | Pending |
-| LINK-02 | — | Pending |
-| LINK-03 | — | Pending |
-| LINK-04 | — | Pending |
-| LINK-05 | — | Pending |
-| LINK-06 | — | Pending |
-| NORM-01 | — | Pending |
-| NORM-02 | — | Pending |
-| NORM-03 | — | Pending |
-| ANAL-01 | — | Pending |
-| ANAL-02 | — | Pending |
-| ANAL-03 | — | Pending |
-| ANAL-04 | — | Pending |
-| ANAL-05 | — | Pending |
-| ANAL-06 | — | Pending |
-| ANAL-07 | — | Pending |
-| ANAL-08 | — | Pending |
-| NBOOK-01 | — | Pending |
-| NBOOK-02 | — | Pending |
-| NBOOK-03 | — | Pending |
-| NBOOK-04 | — | Pending |
-| NBOOK-05 | — | Pending |
-| NBOOK-06 | — | Pending |
-| NBOOK-07 | — | Pending |
-| NBOOK-08 | — | Pending |
-| ORCH-01 | — | Pending |
-| ORCH-02 | — | Pending |
-| ORCH-03 | — | Pending |
+| SCRP-01 | Phase 1 | Pending |
+| SCRP-02 | Phase 1 | Pending |
+| SCRP-03 | Phase 1 | Pending |
+| SCRP-04 | Phase 1 | Pending |
+| SCRP-05 | Phase 1 | Pending |
+| SCRP-06 | Phase 1 | Pending |
+| GAZE-01 | Phase 2 | Pending |
+| GAZE-02 | Phase 2 | Pending |
+| GAZE-03 | Phase 2 | Pending |
+| GAZE-04 | Phase 2 | Pending |
+| GAZE-05 | Phase 2 | Pending |
+| EXTR-01 | Phase 2 | Pending |
+| EXTR-02 | Phase 2 | Pending |
+| EXTR-03 | Phase 2 | Pending |
+| EXTR-04 | Phase 2 | Pending |
+| EXTR-05 | Phase 2 | Pending |
+| EXTR-06 | Phase 2 | Pending |
+| EXTR-07 | Phase 2 | Pending |
+| LINK-01 | Phase 3 | Pending |
+| LINK-02 | Phase 3 | Pending |
+| LINK-03 | Phase 3 | Pending |
+| LINK-04 | Phase 3 | Pending |
+| LINK-05 | Phase 3 | Pending |
+| LINK-06 | Phase 3 | Pending |
+| NORM-01 | Phase 3 | Pending |
+| NORM-02 | Phase 3 | Pending |
+| NORM-03 | Phase 3 | Pending |
+| ANAL-01 | Phase 4 | Pending |
+| ANAL-02 | Phase 4 | Pending |
+| ANAL-03 | Phase 4 | Pending |
+| ANAL-04 | Phase 4 | Pending |
+| ANAL-05 | Phase 4 | Pending |
+| ANAL-06 | Phase 4 | Pending |
+| ANAL-07 | Phase 4 | Pending |
+| ANAL-08 | Phase 4 | Pending |
+| NBOOK-01 | Phase 5 | Pending |
+| NBOOK-02 | Phase 5 | Pending |
+| NBOOK-03 | Phase 5 | Pending |
+| NBOOK-04 | Phase 5 | Pending |
+| NBOOK-05 | Phase 5 | Pending |
+| NBOOK-06 | Phase 5 | Pending |
+| NBOOK-07 | Phase 5 | Pending |
+| NBOOK-08 | Phase 5 | Pending |
+| ORCH-01 | Phase 5 | Pending |
+| ORCH-02 | Phase 5 | Pending |
+| ORCH-03 | Phase 1 | Pending |
 
 **Coverage:**
-- v1 requirements: 45 total
-- Mapped to phases: 0
-- Unmapped: 45
+- v1 requirements: 46 total
+- Mapped to phases: 46
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-11-27*
