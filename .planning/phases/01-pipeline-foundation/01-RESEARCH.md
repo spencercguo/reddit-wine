@@ -622,21 +622,21 @@ def fetch_op_comment(post_id: str, op_author: str, headers: dict) -> str | None:
 | A4 | The `post_hint` field reliably distinguishes image posts from text posts | Architecture Patterns | Some Reddit clients don't set `post_hint`. Mitigation: also check `selftext == ""` and `url` ends with image extension as secondary signals. |
 | A5 | The keyword seed values in the example `keywords.json` are sufficient for >80% recall on r/wine reviews | Code Examples | Filter may be too strict (false negatives) or too loose (false positives). Mitigation: config file enables tuning; two-pass architecture means re-filtering is cheap. |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Should `data/raw/` be .gitignored?**
    - What we know: Raw posts contain Reddit usernames + full text — potential PII/privacy concern and ToS gray area. CONTEXT.md code_context says "Data goes under data/raw/."
    - What's unclear: Whether the raw data should be committed for reproducibility vs. excluded for privacy.
-   - Recommendation: Gitignore `data/raw/` but commit `data/filters/keywords.json`. Document in README that raw data is local-only.
+   - RESOLVED: Recommendation: Gitignore `data/raw/` but commit `data/filters/keywords.json`. Document in README that raw data is local-only.
 
 2. **How many posts can we actually scrape before Reddit's listing index exhausts?**
    - What we know: Reddit caps listings at ~1000 items per sort order. `--limit 2000` may not be reachable from a single `/new.json` sort.
    - What's unclear: Whether `--limit` should cap at 1000 for MVP, or whether multi-sort strategies (hot, new, top) should be implemented now.
-   - Recommendation: Cap Phase 1 scrape at the natural listing limit (~1000). Phase 5 orchestration (ORCH-01/02) can add multi-sort if needed. The manifest tracks `posts_requested` vs `posts_returned` so the discrepancy is always visible.
+   - RESOLVED: Recommendation: Cap Phase 1 scrape at the natural listing limit (~1000). Phase 5 orchestration (ORCH-01/02) can add multi-sort if needed. The manifest tracks `posts_requested` vs `posts_returned` so the discrepancy is always visible.
 
 3. **Should `review_flag` be added inline during scraping or only by the filter pass?**
    - What we know: D-04 says "filtering is a separate pass" but the JSONL contains raw posts. The question is whether `review_flag` defaults to `null` (unclassified) or `false` (pending) until the filter runs.
-   - Recommendation: Set `review_flag: null` and `reject_reason: null` during scraping. The filter pass is the only writer of these fields. This makes it unambiguous whether filtering has been applied.
+   - RESOLVED: Recommendation: Set `review_flag: null` and `reject_reason: null` during scraping. The filter pass is the only writer of these fields. This makes it unambiguous whether filtering has been applied.
 
 ## Sources
 
