@@ -31,7 +31,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The scraper survives non-JSON responses (HTML) by detecting Content-Type mismatches, retrying with backoff, and halting after consecutive failures via circuit breaker
   4. Scraped posts are saved to data/raw/ as JSON files with scrape run metadata (timestamp, post count, errors encountered)
   5. Non-review posts are filtered out and logged with rejection reasons, while genuine reviews pass through a multi-signal scoring gate
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md -- Walking Skeleton: scaffold, storage, single-page scraper, complete filter, integration test
+- [ ] 01-02-PLAN.md -- Scraper resilience: pagination, circuit breaker, OP comment fetch, resume/--fresh logic
 
 ### Phase 2: Gazetteer + Entity Extraction
 **Goal**: Extract structured wine entities from unstructured review text using a seed knowledge base
@@ -93,7 +97,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Pipeline Foundation | 0/0 | Not started | - |
+| 1. Pipeline Foundation | 0/2 | Planned | - |
 | 2. Gazetteer + Entity Extraction | 0/0 | Not started | - |
 | 3. Entity Linking + Normalization | 0/0 | Not started | - |
 | 4. Analysis | 0/0 | Not started | - |
